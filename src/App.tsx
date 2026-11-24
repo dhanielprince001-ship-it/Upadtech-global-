@@ -51,7 +51,7 @@ function App() {
       <header className="header">
         <a className="brand" href="#home" onClick={closeMenu} aria-label="UPADTECH GLOBAL LTD home">
           <span className="brand-mark"><span /></span>
-          <span className="brand-copy"><strong>UPAD<span>TECH</span></strong><small>G L O B A L&nbsp; L T D</small></span>
+          <span className="brand-copy"><strong>UPAD<span>TECH</span></strong><small>G L O B A L&nbsp; L T D</small><em className="brand-tagline">Building Trust. Delivering Excellence.</em></span>
         </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
           {menuOpen ? <X /> : <Menu />}
@@ -71,6 +71,7 @@ function App() {
           <div className="hero-content">
             <p className="eyebrow">UPADTECH GLOBAL LTD · EST. 2016</p>
             <h1>Roofing Supply, Procurement, Construction and General Contracts</h1>
+            <p className="hero-tagline">Building Trust. Delivering Excellence.</p>
             <p className="hero-sub">We Build Roofs That Last. We Deliver Quality You Can Trust.</p>
             <div className="hero-actions">
               <a className="btn btn-orange" href="#contact">Get a Free Quote <ArrowRight size={18} /></a>
@@ -165,11 +166,11 @@ function App() {
 
       <footer className="footer">
         <div className="footer-main">
-          <div><a className="footer-brand" href="#home">UPADTECH GLOBAL LTD</a><p>Building stronger homes and infrastructure through trusted expertise and quality service.</p></div>
+          <div><a className="footer-brand" href="#home">UPADTECH GLOBAL LTD</a><p className="footer-tagline">Building Trust. Delivering Excellence.</p><p>Building stronger homes and infrastructure through trusted expertise and quality service.</p></div>
           <div><h3>Contact Us</h3><p>{address}</p><p>{phone}</p><p>{email}</p></div>
           <div><h3>Quick Links</h3><div className="footer-links"><a href="#home">Home</a><a href="#about-us">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div>
         </div>
-        <div className="footer-bottom"><span>RC 1350857 · Founder & Managing Director: Uchenna Daniel Akanu</span><span>© {new Date().getFullYear()} UPADTECH GLOBAL LTD. All Rights Reserved.</span><strong>Building Trust. Delivering Excellence.</strong></div>
+        <div className="footer-bottom"><span>RC 1350857 · Founder & Managing Director: Uchenna Daniel Akanu</span><span>© {new Date().getFullYear()} UPADTECH GLOBAL LTD. All Rights Reserved.</span></div>
       </footer>
     </>
   )
